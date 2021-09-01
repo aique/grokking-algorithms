@@ -12,8 +12,7 @@ En cuando a la notación, cabe destacar que en caso de una complejidad ` O(n)`, 
 `c` una cantidad determinada de tiempo que se requiere en cada paso.
 
 A este valor se le llama `constante`. Generalmente suele ser ignorada ya que no es determinante en la mayoría de casos,
-salvo en alguna excepción, por ejemplo al evaluar la eficiencia del algoritmo `quicksort`, tal y como se verá más
-adelante. 
+salvo en alguna excepción que se verá más adelante, al evaluar la eficiencia del algoritmo `quicksort`.. 
 
 ## Estrategias de resolución
 
