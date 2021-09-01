@@ -1,4 +1,15 @@
-# Ordenación de elementos de una colección
+# Ordenación de elementos de una colección buscando el siguiente menor
+# y colocándolo al principio de la colección. Complejidad cuadrática O(n²).
+
+
+def selection_sort(collection):
+    sort_collection = []
+
+    for i in range(len(collection)):
+        smallest = smallest_index(collection)
+        sort_collection.append(collection.pop(smallest))
+
+    return sort_collection
 
 
 def smallest_index(collection):
@@ -11,16 +22,6 @@ def smallest_index(collection):
             index = i
 
     return index
-
-
-def selection_sort(collection):
-    sort_collection = []
-
-    for i in range(len(collection)):
-        smallest = smallest_index(collection)
-        sort_collection.append(collection.pop(smallest))
-
-    return sort_collection
 
 
 print(selection_sort([5, 3, 7, 1, 15]))
