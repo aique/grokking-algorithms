@@ -2,6 +2,10 @@
 
 Estos programas/apuntes han sido tomados para seguir los contenidos del libro Grokking Algorithms.
 
+## Estructuras de datos y complejidades
+
+![data structures](./doc/data_structures.jpg)
+
 ## Métricas de evaluación
 
 A continuación se adjunta una tabla con la estimación en tiempo de las complejidades más populares:
@@ -36,3 +40,12 @@ colección.
 
 Dado que la constante de este algoritmo es más baja que en `mergesort`, esto le convierte en el algoritmo de ordenación
 más eficiente.
+
+### Búsqueda en anchura
+
+Esta estrategia se aplica a problemas que pueden ser representados mediante grafos.
+
+Permite dar respuesta a las cuestiones:
+
+- ¿Hay un camino desde un nodo hasta otro?
+- ¿Cuál es el camino más corto desde un nodo hasta otro?
