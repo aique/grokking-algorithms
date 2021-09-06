@@ -1,6 +1,6 @@
 # Algoritmos
 
-Estos programas/apuntes han sido tomados para seguir los contenidos del libro Grokking Algorithms.
+Estos programas/apuntes han sido realizados para seguir los contenidos del libro Grokking Algorithms.
 
 ## Estructuras de datos y complejidades
 
@@ -41,11 +41,24 @@ colección.
 Dado que la constante de este algoritmo es más baja que en `mergesort`, esto le convierte en el algoritmo de ordenación
 más eficiente.
 
-### Búsqueda en anchura
+### Grafos
 
-Esta estrategia se aplica a problemas que pueden ser representados mediante grafos.
+Muchos problemas se pueden representar utilizando esta estructura.
+
+#### Búsqueda en anchura
 
 Permite dar respuesta a las cuestiones:
 
 - ¿Hay un camino desde un nodo hasta otro?
 - ¿Cuál es el camino más corto desde un nodo hasta otro?
+
+#### Algoritmo de Dijkstra
+
+Se utiliza en caso de que las conexiones entre nodos tengan un peso.
+
+Es capaz de determinar el peso menor y el camino a seguir para conseguir llegar a un determinado nodo desde otro.
+
+No se puede aplicar en los siguientes casos:
+
+- Cuando existan pesos negativos, en ese caso utilizar el algoritmo `Bellman-Ford`.
+- Cuando existan ciclos entre dos nodos (desde un nodo A existe una conexión directa con otro nodo B y viceversa).
