@@ -1,5 +1,6 @@
 # Búsqueda del camino más óptimo en un grafo con pesos, utilizando el algoritmo de Dijksta.
 
+
 def search():
     graph = set_up_graph()
     costs = set_up_costs()
@@ -51,6 +52,7 @@ def find_lowest_cost_node(costs, processed):
 
     return lowest_cost_node
 
+
 def set_up_graph():
     graph = {}
 
@@ -76,6 +78,7 @@ def set_up_costs():
     costs['end'] = float('inf')
 
     return costs
+
 
 def set_up_parents():
     parents = {}
