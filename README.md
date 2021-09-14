@@ -4,6 +4,34 @@ Estos programas/apuntes han sido realizados para seguir los contenidos del libro
 
 ## Estructuras de datos y complejidades
 
+### Arrays
+
+Colecciones contiguas de elementos con un tamaño limitado, donde el acceso a una posición concreta es inmediato pero la
+inserción y el borrado pueden llegar a tener un coste de O(n) debido a la reubicación de elementos.
+
+### Listas enlazadas
+
+Colecciones de elementos donde cada uno de ellos tiene un enlace al siguiente. Dado que no hay un espacio que gestionar,
+las inserciones y los borrados son inmediatos, sin embargo el acceso a un elemento en concreto ha de hacerse recorriendo
+la colección desde el principio.
+
+Típicamente cuentan con un puntero para acceder directamente al primer y al último elemento de la colección.
+
+### Tablas hash
+
+Colecciones de elementos donde el espacio reservado es autogestionado por la estructura de datos y la posición de cada
+elemento dentro de esta colección se determina por una `función hash`.
+
+De esta manera en función de un identificador se asigna una posición única dentro del espacio reservado, el cual aumenta
+o disminuye en función de la ocupación.
+
+Se consigue que las operaciones sean inmediatas tanto en el acceso directo a un
+elemento como en la inserción y borrado.
+
+### Complejidades
+
+A continuación se muestran las complejidades de distintas operaciones básicas sobre las estructuras mencionadas:
+
 ![data structures](./doc/data_structures.jpg)
 
 ## Métricas de evaluación
@@ -62,3 +90,18 @@ No se puede aplicar en los siguientes casos:
 
 - Cuando existan pesos negativos, en ese caso utilizar el algoritmo `Bellman-Ford`.
 - Cuando existan ciclos entre dos nodos (desde un nodo A existe una conexión directa con otro nodo B y viceversa).
+
+### Algoritmos devoradores
+
+Se basa en el principio de obtener la solución óptima a cada paso, componiendo una solución final que aunque puede no
+ser la solución óptima, se aproxima mucho a ella con buenos rendimientos.
+
+## Problemas NP-Completos
+
+Este tipo de problemas no tienen una forma de alcanzar una solución óptima en un tiempo computacional razonable.
+
+Un ejemplo es el "problema del viajante", a cuya solución óptima se alcanzaría con una complejidad factorial, siendo
+computacionalmente demasiado costoso de alcanzar cuando el número de nodos aumenta.
+
+La mejor estrategia para su resolución es adoptar una solución aproximada con un coste computacional razonable, por
+ejemplo utilizando un algoritmo devorador.
