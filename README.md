@@ -96,6 +96,21 @@ No se puede aplicar en los siguientes casos:
 Se basa en el principio de obtener la solución óptima a cada paso, componiendo una solución final que aunque puede no
 ser la solución óptima, se aproxima mucho a ella con buenos rendimientos.
 
+### Programación dinámica
+
+La programación dinámica descompone el problema en otros más sencillos, buscando la solución óptima para ellos y
+componiendo finalmente la solución óptima para el problema general.
+
+Un ejemplo clásico es el problema de la mochila, donde hay un conjunto de objetos con un peso y un valor, que hay que
+introducir en una mochila, sin rebasar su capacidad pero maximizando el valor introducido en ella.
+
+Mientras que los algoritmos devoradores pueden no alcanzar la solución óptima, ésta sí se podría conseguir aplizando
+esta técnica.
+
+La resolución implica la composición de una tabla, donde cada celda es un suproblema. Será necesario alcanzar la manera
+de descomponer el problema en estos subproblemas y determinal el algoritmo que a partir de ella obtiene la solución
+óptima.   
+
 ## Problemas NP-Completos
 
 Este tipo de problemas no tienen una forma de alcanzar una solución óptima en un tiempo computacional razonable.
