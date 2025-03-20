@@ -104,11 +104,11 @@ componiendo finalmente la solución óptima para el problema general.
 Un ejemplo clásico es el problema de la mochila, donde hay un conjunto de objetos con un peso y un valor, que hay que
 introducir en una mochila, sin rebasar su capacidad pero maximizando el valor introducido en ella.
 
-Mientras que los algoritmos devoradores pueden no alcanzar la solución óptima, ésta sí se podría conseguir aplizando
+Mientras que los algoritmos devoradores pueden no alcanzar la solución óptima, ésta sí se podría conseguir utilizando
 esta técnica.
 
 La resolución implica la composición de una tabla, donde cada celda es un suproblema. Será necesario alcanzar la manera
-de descomponer el problema en estos subproblemas y determinal el algoritmo que a partir de ella obtiene la solución
+de descomponer el problema en estos subproblemas y determinar el algoritmo que a partir de ella obtiene la solución
 óptima.   
 
 ## Problemas NP-Completos
